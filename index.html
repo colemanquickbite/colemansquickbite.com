@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coleman's Quick Bite LLC offers homemade Southern cooking, BBQ, breakfast, and catering in Kosciusko, Mississippi.">
+  <title>Coleman's Quick Bite | Southern Cooking & Catering</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Coleman's Quick Bite</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#catering">Catering</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">Homemade Southern Cooking • BBQ • Breakfast</p>
+        <h1>Good food made for gatherings.</h1>
+        <p>
+          Coleman’s Quick Bite serves flavorful Southern favorites and custom catering
+          for family events, church gatherings, businesses, and special occasions.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="tel:+16625165046">Call or Text</a>
+          <a class="button secondary" href="mailto:colemanquickbite@gmail.com?subject=Catering%20Quote%20Request">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="section-label">About Us</p>
+        <h2>Made with care in Kosciusko, Mississippi</h2>
+        <p>
+          We prepare homemade meals with the comfort, flavor, and hospitality you expect
+          from Southern cooking. Our menu can be customized to fit your event, guest count,
+          and budget.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt" id="menu">
+      <div class="container">
+        <p class="section-label">Popular Menu Items</p>
+        <h2>Customer favorites</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Main Dishes</h3>
+            <p>Smoked ribs, wings, fried or baked chicken, pulled pork, catfish, shrimp, lasagna, jambalaya, and hamburger steak with gravy.</p>
+          </article>
+          <article class="card">
+            <h3>Sides</h3>
+            <p>Mac and cheese, baked beans, loaded mashed potatoes, potato salad, coleslaw, string beans, Cajun corn, pasta salad, and garden salad.</p>
+          </article>
+          <article class="card">
+            <h3>Desserts & Breakfast</h3>
+            <p>Peach cobbler, banana pudding, cream cheese pound cake, pancakes, bacon, sausage, grits, eggs, biscuits, and toast.</p>
+          </article>
+        </div>
+        <p class="menu-note">
+          Don’t see your favorite dish? Ask about a custom menu for your event.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="catering">
+      <div class="container split">
+        <div>
+          <p class="section-label">Catering</p>
+          <h2>Simple planning. Plenty of food.</h2>
+          <p>
+            We provide catering for birthdays, anniversaries, repasts, church events,
+            employee meals, school functions, and other gatherings.
+          </p>
+        </div>
+        <div class="details-box">
+          <h3>To request an estimate, send:</h3>
+          <ul>
+            <li>Event date and time</li>
+            <li>Location</li>
+            <li>Estimated guest count</li>
+            <li>Menu ideas</li>
+            <li>Any serving or setup needs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container narrow">
+        <p class="section-label">Contact</p>
+        <h2>Let’s plan your next meal</h2>
+        <div class="contact-grid">
+          <a href="tel:+16625165046">
+            <strong>Call or Text</strong>
+            <span>662-516-5046</span>
+          </a>
+          <a href="mailto:colemanquickbite@gmail.com">
+            <strong>Email</strong>
+            <span>colemanquickbite@gmail.com</span>
+          </a>
+          <a href="https://www.facebook.com/colemansquickbite" target="_blank" rel="noopener noreferrer">
+            <strong>Facebook</strong>
+            <span>facebook.com/colemansquickbite</span>
+          </a>
+          <div>
+            <strong>Service Area</strong>
+            <span>Kosciusko, Mississippi and surrounding areas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Coleman’s Quick Bite LLC. All rights reserved.</p>
+      <p>Homemade Southern Cooking • BBQ • Breakfast • Corporate Catering</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
