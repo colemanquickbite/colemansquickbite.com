@@ -23,7 +23,7 @@
         <span class="brand-name"><strong>Coleman’s</strong> Quick Bite</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#menu">Favorites</a><a href="#full-menu">Full Menu</a><a href="#gallery">Gallery</a><a href="#catering">Catering</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#menu">Favorites</a><a href="#full-menu">Full Menu</a><a href="#gallery">Gallery</a><a href="#catering">Catering</a><a href="#quote">Quote</a><a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -36,7 +36,7 @@
         <p class="hero-lead">Homemade Southern cooking, BBQ, breakfast, and catering prepared with care for the people around your table.</p>
         <div class="button-row" aria-label="Get started">
           <a class="button button-primary" href="tel:+16625165046">Call or Text</a>
-          <a class="button button-light" href="mailto:colemanquickbite@gmail.com?subject=Catering%20Quote%20Request">Request a Quote</a>
+          <a class="button button-light" href="#quote">Request a Quote</a>
           <a class="button button-outline" href="#full-menu">View Menu</a>
         </div>
       </div>
@@ -89,9 +89,108 @@
             <span class="certification-mark" aria-hidden="true">✓</span>
             <p><strong>ServSafe Food Protection Manager Certified</strong><span>Certification held by Derrick Coleman • Valid through June 6, 2029</span></p>
           </div>
-          <div class="button-row"><a class="button button-light" href="mailto:colemanquickbite@gmail.com?subject=Catering%20Quote%20Request">Request a Quote</a><a class="button button-outline" href="tel:+16625165046">Call or Text</a></div>
+          <div class="button-row"><a class="button button-light" href="#quote">Request a Quote</a><a class="button button-outline" href="tel:+16625165046">Call or Text</a></div>
         </div>
         <aside class="details-box" aria-labelledby="quote-details-heading"><h3 id="quote-details-heading">Helpful details to share</h3><ul><li>Event date and time</li><li>Event location</li><li>Estimated guest count</li><li>Menu ideas</li><li>Serving or setup needs</li></ul></aside>
+      </div>
+    </section>
+
+    <section class="section quote-section" id="quote" aria-labelledby="quote-heading">
+      <div class="container quote-grid">
+        <div class="quote-intro">
+          <p class="section-label">Tell us about your event</p>
+          <h2 id="quote-heading">Request a catering quote</h2>
+          <p>Share a few details about your gathering and the food you have in mind. Coleman’s Quick Bite will use this information to follow up about your request.</p>
+          <div class="quote-alternative">
+            <strong>Prefer to talk?</strong>
+            <a href="tel:+16625165046">Call or text 662-516-5046</a>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quote-form" action="https://formspree.io/f/mgogbgyg" method="post">
+          <input type="hidden" name="_subject" value="New catering quote request from colemansquickbite.com">
+          <input class="form-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <fieldset>
+            <legend>Your contact information</legend>
+            <div class="form-grid">
+              <div class="form-field form-field-wide">
+                <label for="quote-name">Full name <span aria-hidden="true">*</span></label>
+                <input id="quote-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="quote-email">Email <span aria-hidden="true">*</span></label>
+                <input id="quote-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="quote-phone">Phone number <span aria-hidden="true">*</span></label>
+                <input id="quote-phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="preferred-contact">Preferred contact method</label>
+                <select id="preferred-contact" name="preferred_contact">
+                  <option value="Phone or text">Phone or text</option>
+                  <option value="Email">Email</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Event details</legend>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="event-type">Event type <span aria-hidden="true">*</span></label>
+                <select id="event-type" name="event_type" required>
+                  <option value="">Select an event</option>
+                  <option>Corporate event</option>
+                  <option>Church event</option>
+                  <option>Family gathering</option>
+                  <option>Wedding</option>
+                  <option>Repast</option>
+                  <option>Special occasion</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="event-date">Event date <span aria-hidden="true">*</span></label>
+                <input id="event-date" name="event_date" type="date" required>
+              </div>
+              <div class="form-field">
+                <label for="event-time">Event time</label>
+                <input id="event-time" name="event_time" type="time">
+              </div>
+              <div class="form-field">
+                <label for="guest-count">Estimated guest count <span aria-hidden="true">*</span></label>
+                <input id="guest-count" name="guest_count" type="number" min="1" inputmode="numeric" required>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="event-location">Event location <span aria-hidden="true">*</span></label>
+                <input id="event-location" name="event_location" type="text" autocomplete="street-address" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Food and service</legend>
+            <div class="form-field">
+              <label for="menu-ideas">Menu interests or dishes you have in mind</label>
+              <textarea id="menu-ideas" name="menu_ideas" rows="4"></textarea>
+            </div>
+            <div class="form-field">
+              <label for="setup-needs">Serving or setup needs</label>
+              <textarea id="setup-needs" name="serving_setup_needs" rows="3"></textarea>
+            </div>
+            <div class="form-field">
+              <label for="additional-details">Anything else we should know?</label>
+              <textarea id="additional-details" name="additional_details" rows="4"></textarea>
+            </div>
+          </fieldset>
+
+          <p class="form-note">Fields marked with * are required. Your information will only be used to respond to your catering request.</p>
+          <button class="button button-primary form-submit" type="submit">Send Quote Request</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
@@ -140,6 +239,38 @@
     </section>
   </main>
   <footer><div class="container footer-wrap"><p>© <span id="year">2026</span> Coleman’s Quick Bite LLC. All rights reserved.</p><p>Homemade Southern cooking • BBQ • Breakfast • Catering</p></div></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const quoteForm = document.getElementById('quote-form');
+    const formStatus = document.getElementById('form-status');
+
+    quoteForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const submitButton = quoteForm.querySelector('[type="submit"]');
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending…';
+      formStatus.textContent = '';
+
+      try {
+        const response = await fetch(quoteForm.action, {
+          method: 'POST',
+          body: new FormData(quoteForm),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) throw new Error('Submission failed');
+        quoteForm.reset();
+        formStatus.className = 'form-status form-success';
+        formStatus.textContent = 'Thank you! Your catering request has been sent. We’ll be in touch.';
+      } catch (error) {
+        formStatus.className = 'form-status form-error';
+        formStatus.innerHTML = 'We could not send your request. Please call or text <a href="tel:+16625165046">662-516-5046</a>.';
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Quote Request';
+      }
+    });
+  </script>
 </body>
 </html>
