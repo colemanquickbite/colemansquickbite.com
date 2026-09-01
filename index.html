@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="description" content="Coleman’s Quick Bite LLC serves homemade Southern cooking, BBQ, breakfast, and catering for events in Kosciusko, Mississippi.">
   <meta name="keywords" content="Southern food Kosciusko MS, catering Kosciusko Mississippi, BBQ catering, breakfast catering, Coleman’s Quick Bite">
   <meta name="theme-color" content="#7b241c">
@@ -18,14 +16,19 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="Coleman’s Quick Bite home">
-        <img src="assets/colemans-quick-bite-logo.png" alt="" width="52" height="52">
-        <span class="brand-name"><strong>Coleman’s</strong> Quick Bite</span>
+        <span class="brand-mark">Coleman’s</span>
+        <span>Quick Bite</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#menu">Favorites</a><a href="#full-menu">Full Menu</a><a href="#gallery">Gallery</a><a href="#catering">Catering</a><a href="#quote">Quote</a><a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#catering">Catering</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -35,11 +38,18 @@
       <div class="container hero-content">
         <p class="eyebrow">Kosciusko, Mississippi</p>
         <h1 id="hero-heading">Southern flavor made for sharing.</h1>
-        <p class="hero-lead">Homemade Southern cooking, BBQ, breakfast, and catering prepared with care for the people around your table.</p>
+        <p class="hero-lead">Homemade Southern cooking, BBQ, breakfast, and catering prepared with care for family tables, church gatherings, and unforgettable events.</p>
         <div class="button-row" aria-label="Get started">
           <a class="button button-primary" href="tel:+16625165046">Call or Text</a>
-          <a class="button button-light" href="#quote">Request a Quote</a>
-          <a class="button button-outline" href="#full-menu">View Menu</a>
+          <a class="button button-light" href="mailto:colemanquickbite@gmail.com?subject=Catering%20Quote%20Request">Request a Quote</a>
+          <a class="button button-outline" href="#menu">View Menu</a>
+        </div>
+
+        <div class="hero-trust" aria-label="Service highlights">
+          <span>Homemade</span>
+          <span>BBQ</span>
+          <span>Breakfast</span>
+          <span>Catering</span>
         </div>
       </div>
     </section>
@@ -48,200 +58,202 @@
       <div class="container about-grid">
         <div class="section-copy">
           <p class="section-label">From our kitchen</p>
-          <h2>Homemade food with Southern heart</h2>
-          <div class="owner-intro">
-            <span class="owner-intro-label">Meet the owners</span>
-            <p><strong>Derrick &amp; Shareta Coleman</strong><span>Kosciusko, Mississippi</span></p>
-          </div>
-          <p class="section-intro">Coleman’s Quick Bite LLC brings comforting, flavorful food to tables throughout Kosciusko, Mississippi and the surrounding area.</p>
-          <p>Owned by Derrick and Shareta Coleman of Kosciusko, Coleman’s Quick Bite serves breakfast, BBQ, and full spreads for life’s meaningful moments—the kind of food people are happy to gather around.</p>
+          <h2>Food that feels like home.</h2>
+          <p class="section-intro">Coleman’s Quick Bite LLC brings comfort, flavor, and hospitality to tables throughout Kosciusko, Mississippi and the surrounding area.</p>
+          <p>From breakfast and BBQ to event-ready spreads for weddings, church gatherings, family reunions, and special occasions, every menu is built around the kind of food people remember.</p>
         </div>
-        <figure class="feature-photo family-mark"><img src="assets/colemans-family-logo.png" alt="Coleman’s Quick Bite family catering logo featuring a family of four"></figure>
+        <figure class="feature-photo">
+          <img src="images/string_beans2.jpg" alt="A tray of green beans prepared for a family meal or event" style="object-position: center 52%;">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section values-section">
+      <div class="container">
+        <div class="section-heading center-heading">
+          <div>
+            <p class="section-label">Why families choose us</p>
+            <h2>Made with care, served with heart.</h2>
+          </div>
+        </div>
+        <div class="value-grid">
+          <article class="value-card">
+            <h3>Homemade flavor</h3>
+            <p>Classic Southern recipes prepared with a homemade touch and plenty of flavor.</p>
+          </article>
+          <article class="value-card">
+            <h3>Event ready</h3>
+            <p>From intimate gatherings to larger celebrations, we create food that fits the moment.</p>
+          </article>
+          <article class="value-card">
+            <h3>Local hospitality</h3>
+            <p>Friendly service and food that makes people feel welcome from the first bite to the last.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section menu-section" id="menu" aria-labelledby="menu-heading">
       <div class="container">
         <div class="section-heading">
-          <div><p class="section-label">Featured favorites</p><h2 id="menu-heading">A taste of what we make</h2></div>
-          <p>Southern favorites, savory sides, and crowd-pleasing dishes prepared for everyday meals and special gatherings.</p>
+          <div>
+            <p class="section-label">Featured favorites</p>
+            <h2 id="menu-heading">A taste of what we make</h2>
+          </div>
+          <p>Southern favorites, savory sides, and crowd-pleasing dishes prepared for everyday meals and meaningful gatherings.</p>
         </div>
+
         <div class="food-grid">
-          <article class="food-card"><img src="images/smoked_port_ribs.jpg" alt="Smoked ribs" loading="lazy"><div class="food-card-copy"><h3>Smoked Ribs</h3><p>Slow-smoked and full of BBQ flavor.</p></div></article>
-          <article class="food-card"><img src="images/fried_chicken.jpg" alt="Golden fried chicken" loading="lazy"><div class="food-card-copy"><h3>Fried Chicken</h3><p>A classic Southern favorite.</p></div></article>
-          <article class="food-card"><img src="images/jambalaya.jpg" alt="A pan of jambalaya" loading="lazy"><div class="food-card-copy"><h3>Jambalaya</h3><p>A hearty dish made for sharing.</p></div></article>
-          <article class="food-card"><img src="images/mac_and_cheese.jpg" alt="Homemade macaroni and cheese" loading="lazy"><div class="food-card-copy"><h3>Mac &amp; Cheese</h3><p>Comforting, creamy, and homemade.</p></div></article>
-          <article class="food-card"><img src="images/shrimp_scampi.jpg" alt="Shrimp scampi" loading="lazy"><div class="food-card-copy"><h3>Shrimp Scampi</h3><p>A flavorful seafood favorite.</p></div></article>
-          <article class="food-card"><img src="images/smoked_wings.jpg" alt="Smoked chicken wings" loading="lazy"><div class="food-card-copy"><h3>Smoked Wings</h3><p>Smoky flavor in every bite.</p></div></article>
-          <article class="food-card"><img src="images/hot_honey_wings-cropped.jpg" alt="Hot honey chicken wings" loading="lazy"><div class="food-card-copy"><h3>Hot Honey Wings</h3><p>Chicken wings finished with hot honey flavor.</p></div></article>
-          <article class="food-card"><img src="images/wet_lemon_pepper.jpg" alt="Wet lemon pepper chicken wings" loading="lazy"><div class="food-card-copy"><h3>Wet Lemon Pepper Wings</h3><p>Saucy wings with lemon pepper flavor.</p></div></article>
-          <article class="food-card"><img src="images/banana_pudding.jpg" alt="Homemade banana pudding" loading="lazy"><div class="food-card-copy"><h3>Banana Pudding</h3><p>A homemade Southern dessert favorite.</p></div></article>
-          <article class="food-card"><img src="images/blueberry_cobbler.jpg" alt="Homemade blueberry cobbler" loading="lazy"><div class="food-card-copy"><h3>Blueberry Cobbler</h3><p>Homemade cobbler filled with blueberries.</p></div></article>
+          <article class="food-card">
+            <img src="images/chopped_brisket_best_pics.jpg" alt="Smoked chopped brisket" loading="lazy" style="object-position: center 58%;">
+            <div class="food-card-copy">
+              <h3>Smoked Brisket</h3>
+              <p>Tender, smoky, and made for barbecue lovers.</p>
+            </div>
+          </article>
+          <article class="food-card">
+            <img src="images/string_beans2.jpg" alt="Prepared green beans" loading="lazy" style="object-position: center 52%;">
+            <div class="food-card-copy">
+              <h3>Southern Green Beans</h3>
+              <p>Classic, savory, and full of comforting flavor.</p>
+            </div>
+          </article>
+          <article class="food-card">
+            <img src="images/banana_pudding3.JPG" alt="Banana pudding dessert" loading="lazy" style="object-position: center 50%;">
+            <div class="food-card-copy">
+              <h3>Banana Pudding</h3>
+              <p>A sweet Southern favorite that’s always a hit.</p>
+            </div>
+          </article>
+          <article class="food-card">
+            <img src="images/peach_cobbler2.jpg" alt="Peach cobbler dessert" loading="lazy" style="object-position: center 45%;">
+            <div class="food-card-copy">
+              <h3>Peach Cobbler</h3>
+              <p>Warm, fruity, and made with a homemade Southern touch.</p>
+            </div>
+          </article>
+          <article class="food-card">
+            <img src="images/pulled_pork.jpg" alt="Pulled pork in a tray" loading="lazy" style="object-position: center 45%;">
+            <div class="food-card-copy">
+              <h3>Pulled Pork</h3>
+              <p>Slow-cooked, juicy, and perfect for gatherings.</p>
+            </div>
+          </article>
+          <article class="food-card">
+            <img src="images/blueberry_cobbler.jpg" alt="Blueberry cobbler dessert" loading="lazy" style="object-position: center 50%;">
+            <div class="food-card-copy">
+              <h3>Blueberry Cobbler</h3>
+              <p>A sweet finish with a warm, homemade feel.</p>
+            </div>
+          </article>
         </div>
-        <div class="menu-callout"><p><strong>Looking for something specific?</strong> Ask about menu options for your gathering.</p><a class="text-link" href="mailto:colemanquickbite@gmail.com?subject=Menu%20Question">Ask about the menu <span aria-hidden="true">→</span></a></div>
+
+        <div class="menu-callout">
+          <p><strong>Looking for something specific?</strong> Ask about menu options for your gathering.</p>
+          <a class="text-link" href="mailto:colemanquickbite@gmail.com?subject=Menu%20Question">Ask about the menu <span aria-hidden="true">→</span></a>
+        </div>
       </div>
     </section>
 
     <section class="section catering-section" id="catering">
       <div class="container catering-grid">
         <div class="catering-copy">
-          <p class="section-label section-label-light">Catering</p><h2>Good food for the moments that matter</h2>
-          <p>We cater corporate meals, church events, family gatherings, weddings, repasts, and special occasions. Tell us what you’re planning, and we’ll help you start the conversation around a menu that fits the occasion.</p>
-          <div class="certification-note" aria-label="Food safety certification">
-            <span class="certification-mark" aria-hidden="true">✓</span>
-            <p><strong>ServSafe Food Protection Manager Certified</strong><span>Certification held by Derrick Coleman • Valid through June 6, 2029</span></p>
-          </div>
-          <div class="button-row"><a class="button button-light" href="#quote">Request a Quote</a><a class="button button-outline" href="tel:+16625165046">Call or Text</a></div>
-        </div>
-        <aside class="details-box" aria-labelledby="quote-details-heading"><h3 id="quote-details-heading">Helpful details to share</h3><ul><li>Event date and time</li><li>Event location</li><li>Estimated guest count</li><li>Menu ideas</li><li>Serving or setup needs</li></ul></aside>
-      </div>
-    </section>
-
-    <section class="section quote-section" id="quote" aria-labelledby="quote-heading">
-      <div class="container quote-grid">
-        <div class="quote-intro">
-          <p class="section-label">Tell us about your event</p>
-          <h2 id="quote-heading">Request a catering quote</h2>
-          <p>Share a few details about your gathering and the food you have in mind. Coleman’s Quick Bite will use this information to follow up about your request.</p>
-          <div class="quote-alternative">
-            <strong>Prefer to talk?</strong>
-            <a href="tel:+16625165046">Call or text 662-516-5046</a>
+          <p class="section-label section-label-light">Catering</p>
+          <h2>Good food for the moments that matter.</h2>
+          <p>We cater corporate meals, church events, family gatherings, weddings, repasts, and special occasions. Share your plans, guest count, and menu ideas, and we’ll help you build a spread that feels warm, generous, and memorable.</p>
+          <div class="button-row">
+            <a class="button button-light" href="mailto:colemanquickbite@gmail.com?subject=Catering%20Quote%20Request">Request a Quote</a>
+            <a class="button button-outline" href="tel:+16625165046">Call or Text</a>
           </div>
         </div>
 
-        <form class="quote-form" id="quote-form" action="https://formspree.io/f/mgogbgyg" method="post" accept-charset="UTF-8">
-          <input type="hidden" name="_subject" value="New catering quote request from colemansquickbite.com">
-          <input class="form-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-          <fieldset>
-            <legend>Your contact information</legend>
-            <div class="form-grid">
-              <div class="form-field form-field-wide">
-                <label for="quote-name">Full name <span aria-hidden="true">*</span></label>
-                <input id="quote-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="100" required>
-              </div>
-              <div class="form-field">
-                <label for="quote-email">Email <span aria-hidden="true">*</span></label>
-                <input id="quote-email" name="email" type="email" autocomplete="email" maxlength="254" required>
-              </div>
-              <div class="form-field">
-                <label for="quote-phone">Phone number <span aria-hidden="true">*</span></label>
-                <input id="quote-phone" name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="30" pattern="[0-9+(). -]{7,30}" title="Enter a valid phone number using numbers and common phone punctuation" required>
-              </div>
-              <div class="form-field form-field-wide">
-                <label for="preferred-contact">Preferred contact method</label>
-                <select id="preferred-contact" name="preferred_contact">
-                  <option value="Phone or text">Phone or text</option>
-                  <option value="Email">Email</option>
-                </select>
-              </div>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Event details</legend>
-            <div class="form-grid">
-              <div class="form-field">
-                <label for="event-type">Event type <span aria-hidden="true">*</span></label>
-                <select id="event-type" name="event_type" required>
-                  <option value="">Select an event</option>
-                  <option>Corporate event</option>
-                  <option>Church event</option>
-                  <option>Family gathering</option>
-                  <option>Wedding</option>
-                  <option>Repast</option>
-                  <option>Special occasion</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="form-field">
-                <label for="event-date">Event date <span aria-hidden="true">*</span></label>
-                <input id="event-date" name="event_date" type="date" required>
-              </div>
-              <div class="form-field">
-                <label for="event-time">Event time</label>
-                <input id="event-time" name="event_time" type="time">
-              </div>
-              <div class="form-field">
-                <label for="guest-count">Estimated guest count <span aria-hidden="true">*</span></label>
-                <input id="guest-count" name="guest_count" type="number" min="1" max="100000" inputmode="numeric" required>
-              </div>
-              <div class="form-field form-field-wide">
-                <label for="event-location">Event location <span aria-hidden="true">*</span></label>
-                <input id="event-location" name="event_location" type="text" autocomplete="street-address" minlength="2" maxlength="200" required>
-              </div>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Food and service</legend>
-            <div class="form-field">
-              <label for="menu-ideas">Menu interests or dishes you have in mind</label>
-              <textarea id="menu-ideas" name="menu_ideas" rows="4" maxlength="2000"></textarea>
-            </div>
-            <div class="form-field">
-              <label for="setup-needs">Serving or setup needs</label>
-              <textarea id="setup-needs" name="serving_setup_needs" rows="3" maxlength="1500"></textarea>
-            </div>
-            <div class="form-field">
-              <label for="additional-details">Anything else we should know?</label>
-              <textarea id="additional-details" name="additional_details" rows="4" maxlength="2000"></textarea>
-            </div>
-          </fieldset>
-
-          <p class="form-note">Fields marked with * are required. Your information will only be used to respond to your catering request.</p>
-          <button class="button button-primary form-submit" type="submit">Send Quote Request</button>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+        <aside class="details-box" aria-labelledby="quote-details-heading">
+          <h3 id="quote-details-heading">Helpful details to share</h3>
+          <ul>
+            <li>Event date and time</li>
+            <li>Event location</li>
+            <li>Estimated guest count</li>
+            <li>Menu ideas</li>
+            <li>Serving or setup needs</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
     <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
       <div class="container">
-        <div class="section-heading gallery-heading"><div><p class="section-label">From the kitchen</p><h2 id="gallery-heading">Food worth gathering for</h2></div><p>A closer look at dishes and spreads prepared by Coleman’s Quick Bite.</p></div>
-        <div class="gallery-grid">
-          <figure class="gallery-wide"><img src="images/drop_go_buffet.jpg" alt="Catered drop-and-go buffet" loading="lazy"></figure>
-          <figure><img src="images/grilled_burgers_hotdogs.JPG" alt="Burgers and hot dogs cooking on a grill" loading="lazy"></figure>
-          <figure class="gallery-fajita"><img src="images/grilled_fajita_chicken.jpg" alt="Grilled fajita chicken" loading="lazy"></figure>
-          <figure class="gallery-wings"><img src="images/sauced_chicken_wing.jpg" alt="Sauced chicken wings" loading="lazy"></figure>
-          <figure><img src="images/chicken_salad.jpg" alt="Chicken salad" loading="lazy"></figure>
-          <figure><img src="images/mashed_potatoes.jpg" alt="Mashed potatoes" loading="lazy"></figure>
-          <figure><img src="images/string_beans.jpg" alt="Southern-style string beans" loading="lazy"></figure>
-          <figure><img src="images/salad_trimmings.jpg" alt="Fresh salad trimmings" loading="lazy"></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section full-menu-section" id="full-menu" aria-labelledby="full-menu-heading">
-      <div class="container full-menu-grid">
-        <div class="full-menu-copy">
-          <p class="section-label">Catering menu</p>
-          <h2 id="full-menu-heading">Explore the full menu</h2>
-          <p>Browse the supplied catering menu for entrées, sides, desserts, breakfast selections, and party trays. Contact us to discuss the menu for your gathering.</p>
-          <div class="button-row">
-            <a class="button button-primary" href="assets/colemans-quick-bite-catering-menu.pdf" target="_blank" rel="noopener">Open Menu PDF</a>
-            <a class="button menu-contact-button" href="mailto:colemanquickbite@gmail.com?subject=Menu%20Question">Ask a Menu Question</a>
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="section-label">From the kitchen</p>
+            <h2 id="gallery-heading">Food worth gathering for</h2>
           </div>
-          <p class="menu-format-note">The PDF opens in a new browser tab and can be downloaded or printed from there.</p>
+          <p>A closer look at dishes and spreads prepared by Coleman’s Quick Bite.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-wide">
+            <img src="images/pulled_pork.jpg" alt="A large tray of pulled pork ready for service" loading="lazy" style="object-position: center 50%;">
+          </figure>
+          <figure>
+            <img src="images/string_beans2.jpg" alt="A tray of green beans with seasoning" loading="lazy" style="object-position: center 50%;">
+          </figure>
+          <figure>
+            <img src="images/banana_pudding3.JPG" alt="Banana pudding dessert prepared in a tray" loading="lazy" style="object-position: center 52%;">
+          </figure>
+          <figure>
+            <img src="images/peach_cobbler2.jpg" alt="Peach cobbler dessert" loading="lazy" style="object-position: center 45%;">
+          </figure>
+          <figure>
+            <img src="images/chopped_brisket_best_pics.jpg" alt="Smoked chopped brisket tray" loading="lazy" style="object-position: center 52%;">
+          </figure>
+          <figure>
+            <img src="images/blueberry_cobbler.jpg" alt="Blueberry cobbler dessert" loading="lazy" style="object-position: center 52%;">
+          </figure>
+          <figure class="gallery-wide">
+            <img src="images/drop_go_buffet2.jpg" alt="Prepared buffet dishes for an event" loading="lazy" style="object-position: center 62%;">
+          </figure>
         </div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="container contact-wrap">
-        <div><p class="section-label section-label-light">Get in touch</p><h2>Let’s talk about your next meal</h2><p>Reach out by phone, text, email, or Facebook to start planning.</p></div>
+        <div>
+          <p class="section-label section-label-light">Get in touch</p>
+          <h2>Let’s talk about your next meal.</h2>
+          <p>Reach out by phone, text, email, or Facebook to start planning your next gathering.</p>
+        </div>
+
         <div class="contact-grid">
-          <a href="tel:+16625165046"><strong>Call or Text</strong><span>662-516-5046</span></a>
-          <a href="mailto:colemanquickbite@gmail.com"><strong>Email</strong><span>colemanquickbite@gmail.com</span></a>
-          <a href="https://www.facebook.com/colemansquickbite" target="_blank" rel="noopener noreferrer"><strong>Facebook</strong><span>Visit our page <span aria-hidden="true">↗</span></span></a>
-          <a href="https://www.instagram.com/colemanqbllc/" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong><span>@colemanqbllc <span aria-hidden="true">↗</span></span></a>
-          <a href="https://g.page/r/Cbv4tz_cvOX-EBM/review" target="_blank" rel="noopener noreferrer"><strong>Google Reviews</strong><span>Share your experience <span aria-hidden="true">↗</span></span></a>
-          <div><strong>Based in</strong><span>Kosciusko, Mississippi</span></div>
+          <a href="tel:+16625165046">
+            <strong>Call or Text</strong>
+            <span>662-516-5046</span>
+          </a>
+          <a href="mailto:colemanquickbite@gmail.com">
+            <strong>Email</strong>
+            <span>colemanquickbite@gmail.com</span>
+          </a>
+          <a href="https://www.facebook.com/colemansquickbite" target="_blank" rel="noopener noreferrer">
+            <strong>Facebook</strong>
+            <span>Visit our page <span aria-hidden="true">↗</span></span>
+          </a>
+          <div>
+            <strong>Based in</strong>
+            <span>Kosciusko, Mississippi</span>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer><div class="container footer-wrap"><p>© <span id="year">2026</span> Coleman’s Quick Bite LLC. All rights reserved.</p><p>Homemade Southern cooking • BBQ • Breakfast • Catering</p></div></footer>
-  <script src="script.js" defer></script>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© <span id="year">2026</span> Coleman’s Quick Bite LLC. All rights reserved.</p>
+      <p>Homemade Southern cooking • BBQ • Breakfast • Catering</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
