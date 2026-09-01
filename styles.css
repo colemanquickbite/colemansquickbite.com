@@ -132,7 +132,7 @@ nav a:focus-visible {
   place-items: center;
   background:
     linear-gradient(90deg, rgba(27, 16, 13, 0.82) 0%, rgba(42, 23, 18, 0.72) 52%, rgba(42, 23, 18, 0.54) 100%),
-    url('images/smoked_spare_ribs2.jpg') center 46% / cover no-repeat;
+    url('images/drop_go_buffet.jpg') center 46% / cover no-repeat;
   color: white;
 }
 
