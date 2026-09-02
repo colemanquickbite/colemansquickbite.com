@@ -611,6 +611,130 @@ h3 {
   margin-top: 8px;
 }
 
+.quote-form-wrap {
+  margin-top: 56px;
+}
+
+.quote-form {
+  padding: clamp(24px, 4vw, 42px);
+  color: var(--text);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.quote-form fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.quote-form fieldset + fieldset {
+  padding-top: 30px;
+  margin-top: 34px;
+  border-top: 1px solid var(--border);
+}
+
+.quote-form legend {
+  width: 100%;
+  margin-bottom: 18px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-field + .form-field {
+  margin-top: 18px;
+}
+
+.form-grid .form-field {
+  margin-top: 0;
+}
+
+.form-field-wide {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  color: #3e332c;
+  font-weight: 800;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 12px;
+  color: var(--text);
+  background: #fffdf9;
+  border: 2px solid #cfc0b2;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.form-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--accent);
+  outline: 3px solid rgba(157, 48, 36, 0.17);
+}
+
+.form-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.form-note {
+  margin: 24px 0 16px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.form-submit {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.form-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+.form-status {
+  min-height: 1.5em;
+  margin: 16px 0 0;
+  font-weight: 800;
+}
+
+.form-success {
+  color: #276738;
+}
+
+.form-error {
+  color: #9a2017;
+}
+
 .gallery-section {
   background: #fffdfb;
 }
@@ -748,7 +872,8 @@ footer {
   .food-grid,
   .value-grid,
   .gallery-grid,
-  .special-menu {
+  .special-menu,
+  .form-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -810,8 +935,13 @@ footer {
   .value-grid,
   .gallery-grid,
   .contact-grid,
-  .special-menu {
+  .special-menu,
+  .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .form-field-wide {
+    grid-column: auto;
   }
 
   .labor-day-details {

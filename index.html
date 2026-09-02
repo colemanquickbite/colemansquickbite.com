@@ -227,6 +227,93 @@
           </ul>
         </aside>
       </div>
+
+      <div class="container quote-form-wrap">
+        <form class="quote-form" id="quote-form" action="https://formspree.io/f/mgogbgyg" method="post">
+          <input type="hidden" name="_subject" value="New catering quote request from colemansquickbite.com">
+          <input class="form-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <fieldset>
+            <legend>Your contact information</legend>
+            <div class="form-grid">
+              <div class="form-field form-field-wide">
+                <label for="quote-name">Full name <span aria-hidden="true">*</span></label>
+                <input id="quote-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="quote-email">Email <span aria-hidden="true">*</span></label>
+                <input id="quote-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="quote-phone">Phone number <span aria-hidden="true">*</span></label>
+                <input id="quote-phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="preferred-contact">Preferred contact method</label>
+                <select id="preferred-contact" name="preferred_contact">
+                  <option value="Phone or text">Phone or text</option>
+                  <option value="Email">Email</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Event details</legend>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="event-type">Event type <span aria-hidden="true">*</span></label>
+                <select id="event-type" name="event_type" required>
+                  <option value="">Select an event</option>
+                  <option>Corporate event</option>
+                  <option>Church event</option>
+                  <option>Family gathering</option>
+                  <option>Wedding</option>
+                  <option>Repast</option>
+                  <option>Special occasion</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="event-date">Event date <span aria-hidden="true">*</span></label>
+                <input id="event-date" name="event_date" type="date" required>
+              </div>
+              <div class="form-field">
+                <label for="event-time">Event time</label>
+                <input id="event-time" name="event_time" type="time">
+              </div>
+              <div class="form-field">
+                <label for="guest-count">Estimated guest count <span aria-hidden="true">*</span></label>
+                <input id="guest-count" name="guest_count" type="number" min="1" inputmode="numeric" required>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="event-location">Event location <span aria-hidden="true">*</span></label>
+                <input id="event-location" name="event_location" type="text" autocomplete="street-address" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Food and service</legend>
+            <div class="form-field">
+              <label for="menu-ideas">Menu interests or dishes you have in mind</label>
+              <textarea id="menu-ideas" name="menu_ideas" rows="4"></textarea>
+            </div>
+            <div class="form-field">
+              <label for="setup-needs">Serving or setup needs</label>
+              <textarea id="setup-needs" name="serving_setup_needs" rows="3"></textarea>
+            </div>
+            <div class="form-field">
+              <label for="additional-details">Anything else we should know?</label>
+              <textarea id="additional-details" name="additional_details" rows="4"></textarea>
+            </div>
+          </fieldset>
+
+          <p class="form-note">Fields marked with * are required. Your information will only be used to respond to your catering request.</p>
+          <button class="button button-primary form-submit" type="submit">Send Quote Request</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
 
     <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
