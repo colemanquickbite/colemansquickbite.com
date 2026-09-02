@@ -258,6 +258,120 @@ h3 {
   text-transform: uppercase;
 }
 
+.labor-day-section {
+  padding: 72px 0;
+  background: #f1dfc6;
+}
+
+.labor-day-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(32px, 6vw, 78px);
+  align-items: center;
+}
+
+.labor-day-photo {
+  position: relative;
+}
+
+.labor-day-photo::after {
+  position: absolute;
+  right: -14px;
+  bottom: -14px;
+  z-index: 0;
+  width: 72%;
+  height: 72%;
+  background: var(--gold);
+  content: '';
+}
+
+.labor-day-photo img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 390px;
+  border: 8px solid var(--surface);
+  object-fit: cover;
+  object-position: center 58%;
+  box-shadow: var(--shadow);
+}
+
+.labor-day-copy h2 {
+  font-size: clamp(2.25rem, 4vw, 4rem);
+}
+
+.labor-day-lead {
+  max-width: 700px;
+  margin-bottom: 22px;
+  font-size: 1.08rem;
+}
+
+.labor-day-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.labor-day-details div {
+  display: grid;
+  gap: 2px;
+  padding: 14px 16px;
+  background: rgba(255, 253, 249, 0.72);
+  border-left: 4px solid var(--accent);
+}
+
+.labor-day-details span {
+  color: var(--muted);
+}
+
+.special-menu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 30px;
+}
+
+.special-menu-group h3 {
+  margin-bottom: 8px;
+  color: var(--accent-dark);
+  font-size: 1.35rem;
+}
+
+.special-menu-group ul {
+  display: grid;
+  gap: 6px;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.special-menu-group li {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(126, 43, 34, 0.18);
+  font-size: 0.95rem;
+}
+
+.special-menu-group li strong {
+  flex-shrink: 0;
+  color: var(--accent-dark);
+  text-align: right;
+}
+
+.button-outline-dark {
+  color: var(--accent-dark);
+  border-color: var(--accent-dark);
+  background: transparent;
+}
+
+.button-outline-dark:hover,
+.button-outline-dark:focus-visible {
+  color: #fff;
+  background: var(--accent-dark);
+}
+
 .section {
   padding: 96px 0;
   scroll-margin-top: 96px;
@@ -617,6 +731,7 @@ footer {
 
   .about-grid,
   .catering-grid,
+  .labor-day-grid,
   .contact-wrap,
   .section-heading {
     grid-template-columns: 1fr;
@@ -626,9 +741,14 @@ footer {
     height: 420px;
   }
 
+  .labor-day-photo img {
+    height: 360px;
+  }
+
   .food-grid,
   .value-grid,
-  .gallery-grid {
+  .gallery-grid,
+  .special-menu {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -689,7 +809,12 @@ footer {
   .food-grid,
   .value-grid,
   .gallery-grid,
-  .contact-grid {
+  .contact-grid,
+  .special-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .labor-day-details {
     grid-template-columns: 1fr;
   }
 
