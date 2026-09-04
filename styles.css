@@ -471,6 +471,36 @@ h3 {
   font-size: clamp(1.05rem, 2vw, 1.2rem);
 }
 
+.owner-intro {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin: 2px 0 22px;
+  padding: 12px 16px;
+  background: var(--surface-strong);
+  border-left: 4px solid var(--gold);
+}
+
+.owner-intro-label {
+  color: var(--accent-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.owner-intro p {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  color: var(--text);
+}
+
+.owner-intro p span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .feature-photo {
   position: relative;
   margin: 0;
