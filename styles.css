@@ -793,14 +793,6 @@ h3 {
   transition: transform 220ms ease;
 }
 
-.event-gallery-grid figure:nth-last-child(-n + 2) {
-  background: #fff;
-}
-
-.event-gallery-grid figure:nth-last-child(-n + 2) img {
-  object-fit: contain;
-}
-
 .event-gallery-grid figure:hover img,
 .event-gallery-grid figure:focus-within img {
   transform: scale(1.03);
