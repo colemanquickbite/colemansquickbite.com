@@ -834,17 +834,19 @@ h3 {
   font-size: 1.8rem;
 }
 
-.event-menu-list ul {
+.event-menu-columns {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 10px 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
   margin: 0 0 22px;
-  padding-left: 20px;
-  color: var(--muted);
 }
 
-.event-menu-list li:nth-child(4) {
-  white-space: nowrap;
+.event-menu-columns ul {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
 }
 
 .event-menu-list p {
@@ -1122,12 +1124,8 @@ footer {
     margin-bottom: 64px;
   }
 
-  .event-menu-list ul {
+  .event-menu-columns {
     grid-template-columns: 1fr;
-  }
-
-  .event-menu-list li:nth-child(4) {
-    white-space: normal;
   }
 
   .gallery-grid .gallery-wide {
