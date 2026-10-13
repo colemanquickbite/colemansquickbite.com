@@ -519,6 +519,47 @@ h3 {
   font-size: 1rem;
 }
 
+.menu-pdf-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px;
+  margin-bottom: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.menu-pdf-card > div:first-child {
+  flex: 1 1 280px;
+}
+
+.menu-pdf-card h3 {
+  margin: 0 0 8px;
+}
+
+.menu-pdf-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.menu-pdf-action {
+  flex: 1 1 280px;
+  max-width: 380px;
+}
+
+.menu-pdf-action .button {
+  gap: 8px;
+  width: 100%;
+}
+
+.menu-pdf-action p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+
 .food-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
