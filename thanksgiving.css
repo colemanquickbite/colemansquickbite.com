@@ -1,0 +1,199 @@
+/* Thanksgiving 2026: burgundy from the owner's flyer, a harvest-gold date band,
+   and overlapping photographs of the actual food as the holiday table. */
+:root {
+  --holiday-wine: #731c17;
+  --holiday-deep: #481711;
+  --holiday-gold: #ebbd70;
+  --holiday-paper: #fffaf4;
+  --holiday-ink: #321c16;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+#thanksgiving, #preorder, #holiday-dishes { scroll-margin-top: 145px; }
+[hidden] { display: none !important; }
+.holiday-hero { overflow: hidden; color: var(--holiday-paper); background: var(--holiday-wine); }
+.holiday-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  padding-block: 76px 82px;
+}
+.holiday-intro .eyebrow { color: var(--holiday-gold); font-size: 0.7rem; }
+.holiday-season { margin: 34px 0 16px; font-size: 0.85rem; }
+.holiday-intro h1 { font-size: clamp(2.8rem, 4.7vw, 4.6rem); line-height: 1.08; }
+.holiday-intro h1 em { color: var(--holiday-gold); font-weight: normal; }
+.holiday-lead { margin: 28px 0 10px; font-size: 1.35rem; font-weight: 800; }
+.holiday-intro > p:not(.eyebrow):not(.holiday-lead) { max-width: 490px; }
+.preorder-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 12px;
+  border: 1px solid var(--holiday-gold);
+  color: var(--holiday-gold);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.holiday-intro .button-row { gap: 12px; margin-top: 24px; }
+.holiday-intro .button { gap: 12px; padding-inline: 18px; font-size: 0.9rem; }
+.holiday-phone { margin: 22px 0 0; font-size: 0.88rem; }
+.holiday-phone a { text-underline-offset: 4px; }
+.holiday-table { position: relative; padding: 0 0 70px 20px; }
+.holiday-table figure { margin: 0; }
+.holiday-ribs { transform: rotate(3deg); padding: 9px; background: var(--holiday-paper); box-shadow: 0 18px 45px #320f1555; }
+.holiday-ribs img { width: 100%; height: 410px; object-fit: cover; }
+.holiday-ribs figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  padding: 16px 8px 10px;
+  color: var(--holiday-ink);
+  font-size: 0.8rem;
+}
+.holiday-ribs strong { color: var(--holiday-wine); white-space: nowrap; }
+.holiday-side {
+  position: absolute;
+  left: -30px;
+  bottom: -12px;
+  width: 59%;
+  padding: 8px;
+  background: var(--holiday-paper);
+  transform: rotate(-6deg);
+  box-shadow: 0 10px 25px #320f1540;
+}
+.holiday-side img { width: 100%; height: 175px; object-fit: cover; }
+.holiday-side figcaption { padding: 10px 4px 3px; color: var(--holiday-ink); font: italic 0.9rem Georgia, serif; }
+.holiday-dates { color: var(--holiday-ink); background: var(--holiday-gold); }
+.holiday-dates-grid { display: grid; grid-template-columns: 1fr 1fr; padding-block: 24px; gap: 36px; }
+.holiday-dates p { margin: 0; }
+.holiday-dates span { display: block; margin-bottom: 4px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.holiday-dates strong { font-size: clamp(0.9rem, 1.6vw, 1.1rem); }
+.holiday-dates p + p { border-left: 1px solid #731c1740; padding-left: 36px; }
+.holiday-menu { background: var(--holiday-paper); }
+.holiday-menu .section-heading { margin-bottom: 44px; }
+.holiday-menu h2, .holiday-order h2 { color: var(--holiday-wine); }
+.holiday-meats { padding: 30px 36px; background: var(--holiday-wine); color: var(--holiday-paper); border-radius: 12px; }
+.holiday-meats h3 { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 20px; font-size: 1.9rem; }
+.holiday-meats h3 span { color: var(--holiday-gold); font: 700 0.75rem Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.14em; }
+.holiday-meats dl { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: 0; }
+.holiday-meats dl div { border-top: 1px solid #ffffff45; padding-top: 18px; }
+.holiday-meats dt { font-size: 1.08rem; font-weight: 700; }
+.holiday-meats dd { margin: 6px 0 0; font-size: 0.9rem; }
+.holiday-meats dd strong { color: var(--holiday-gold); font: 700 2.5rem Georgia, serif; margin-right: 5px; }
+.holiday-menu-tables { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 42px; margin-top: 36px; }
+.holiday-menu-group { min-width: 0; }
+.holiday-price-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; }
+.holiday-price-table caption { padding-bottom: 20px; text-align: left; color: var(--holiday-wine); font: 700 1.9rem Georgia, serif; }
+.holiday-price-table thead { color: var(--holiday-wine); background: #f1e2d1; }
+.holiday-price-table th, .holiday-price-table td { padding: 17px 10px; }
+.holiday-price-table thead th { font-size: 0.75rem; }
+.holiday-price-table th:first-child { width: 49%; }
+.holiday-price-table th:not(:first-child), .holiday-price-table td { text-align: center; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.holiday-price-table tbody tr { border-bottom: 1px solid #dfcebd; }
+.holiday-price-table tbody th { line-height: 1.4; font-weight: 600; }
+.holiday-price-table th span { display: block; }
+.holiday-price-table tbody th span { margin-top: 3px; color: var(--muted); font-size: 0.8rem; font-weight: 400; }
+.holiday-dessert { margin: 28px 0 0; }
+.holiday-dessert img { width: 100%; height: 175px; object-fit: cover; object-position: center 45%; border-radius: 8px; }
+.holiday-dessert figcaption { margin-top: 10px; color: var(--muted); font: italic 1.05rem Georgia, serif; }
+.holiday-menu-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 16px; border-top: 1px solid #dfcebd; margin-top: 40px; padding-top: 24px; font-size: 0.9rem; }
+.holiday-menu-footer p { margin: 0; }
+.holiday-menu-footer .text-link { white-space: normal; }
+.holiday-menu-footer > a { color: var(--holiday-wine); text-underline-offset: 4px; }
+.holiday-order { background: #f0e2d3; }
+.holiday-order-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; align-items: start; gap: 64px; }
+.holiday-order-copy > p:not(.section-label) { color: var(--muted); margin-top: 26px; }
+.holiday-order-copy > p a { font-weight: 700; color: var(--holiday-wine); white-space: nowrap; }
+.holiday-order-details { margin: 32px 0; border-block: 1px solid #d3bba5; }
+.holiday-order-details div { padding-block: 20px; }
+.holiday-order-details div + div { border-top: 1px solid #d3bba5; }
+.holiday-order-details dt { color: var(--holiday-wine); font-weight: 800; }
+.holiday-order-details dd { margin: 4px 0 0; }
+.holiday-text-button { color: var(--holiday-wine); border-color: var(--holiday-wine); background: transparent; }
+.holiday-text-button:hover { background: #fffaf4; }
+
+.holiday-shop { background: #fffdf9; }
+.holiday-shop h2 { color: var(--holiday-wine); }
+.holiday-shop-help { color: var(--muted); margin-bottom: 28px; }
+.holiday-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.holiday-product { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: white; }
+.holiday-product-photo { position: relative; display: block; }
+.holiday-product-photo img { width: 100%; height: 230px; object-fit: cover; }
+.holiday-turkey-photo img { object-position: center 35%; }
+.holiday-product-photo span { position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 16px; color: white; background: #321c16e6; font-size: 0.75rem; }
+.holiday-product-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+.holiday-product h3 { font-size: 1.6rem; color: var(--holiday-wine); }
+.holiday-photo-price { margin: auto 0 0; color: var(--muted); font-size: 0.85rem; line-height: 1.7; }
+.holiday-photo-note { margin: 28px 0 0; color: var(--muted); font-size: 0.9rem; }
+.holiday-photo-note a { color: var(--holiday-wine); font-weight: 700; text-underline-offset: 3px; }
+.holiday-pickup-note { padding: 36px; background: #fffaf4; border-radius: 12px; border-top: 5px solid var(--holiday-wine); }
+.holiday-pickup-note h3 { color: var(--holiday-wine); font-size: 2rem; }
+.holiday-pickup-note > p:last-child { margin-bottom: 0; color: var(--muted); font-size: 0.9rem; }
+.holiday-pickup-note .holiday-order-details { margin: 24px 0; }
+.holiday-order-copy .holiday-order-phone { margin-top: 18px; font-size: 1.65rem; }
+.holiday-order-copy .holiday-order-phone a { text-decoration: none; }
+.holiday-about { padding-block: 64px; background: #fffdf9; }
+.holiday-about .container { max-width: 850px; }
+.holiday-about h2 { color: var(--holiday-wine); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 24px; }
+.holiday-about p:not(.section-label) { color: var(--muted); max-width: 750px; }
+.holiday-about .holiday-catering-note { margin-bottom: 0; font-size: 0.9rem; }
+.holiday-catering-note a { color: var(--holiday-wine); font-weight: 700; text-underline-offset: 3px; }
+.holiday-order-copy > p a { white-space: normal; }
+
+@media (max-width: 1000px) {
+  .holiday-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .holiday-product-grid { grid-template-columns: 1fr; }
+  .holiday-product-photo img { height: 260px; }
+  .holiday-pickup-note { padding: 28px; }
+}
+
+@media (min-width: 901px) {
+  .holiday-intro .button-row { flex-wrap: nowrap; }
+}
+@media (max-width: 1000px) {
+  .holiday-hero-grid { gap: 32px; }
+  .holiday-order-grid { gap: 32px; }
+  .holiday-menu-tables { gap: 24px; grid-template-columns: 1fr 1fr; }
+  .holiday-price-table th, .holiday-price-table td { padding-inline: 7px; }
+}
+@media (max-width: 760px) {
+  .holiday-hero-grid { grid-template-columns: 1fr; padding-block: 48px 60px; gap: 42px; }
+  .holiday-intro h1 { max-width: 560px; font-size: clamp(2.7rem, 7vw, 4rem); }
+  .holiday-season { margin-top: 24px; }
+  .holiday-table { width: min(100% - 30px, 460px); justify-self: center; padding-left: 20px; }
+  .holiday-ribs img { height: 280px; }
+  .holiday-side { left: -10px; }
+  .holiday-side img { height: 135px; }
+  .holiday-menu-tables, .holiday-order-grid { grid-template-columns: 1fr; gap: 36px; }
+  .holiday-price-table th, .holiday-price-table td { padding: 16px 10px; }
+  .holiday-dessert img { height: 220px; }
+}
+@media (max-width: 480px) {
+  .holiday-hero-grid { padding-top: 36px; }
+  .holiday-intro h1 { font-size: 2.65rem; }
+  .holiday-intro .eyebrow { max-width: 260px; }
+  .holiday-dates-grid { grid-template-columns: 1fr; gap: 16px; }
+  .holiday-dates p + p { border-left: 0; border-top: 1px solid #731c1740; padding: 16px 0 0; }
+  .holiday-meats { padding: 24px; }
+  .holiday-meats dl { grid-template-columns: 1fr; gap: 20px; }
+  .holiday-menu-footer { align-items: flex-start; }
+  .holiday-ribs figcaption { font-size: 0.7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .holiday-ribs, .holiday-side { transform: none; }
+}

@@ -1,46 +1,51 @@
 'use strict';
 
 const year = document.getElementById('year');
-const quoteForm = document.getElementById('quote-form');
-const formStatus = document.getElementById('form-status');
 
-year.textContent = new Date().getFullYear();
+if (year) year.textContent = new Date().getFullYear();
 
-quoteForm.addEventListener('submit', async (event) => {
-  event.preventDefault();
+document.querySelectorAll('[data-request-form]').forEach((form) => {
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-  if (!quoteForm.reportValidity()) return;
+    if (!form.reportValidity()) return;
 
-  const submitButton = quoteForm.querySelector('[type="submit"]');
-  submitButton.disabled = true;
-  submitButton.textContent = 'Sending…';
-  formStatus.replaceChildren();
-  formStatus.className = 'form-status';
+    const submitButton = form.querySelector('[type="submit"]');
+    const formStatus = form.querySelector('.form-status');
+    const buttonText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending…';
+    formStatus.replaceChildren();
+    formStatus.className = 'form-status';
 
-  try {
-    const response = await fetch(quoteForm.action, {
-      method: 'POST',
-      body: new FormData(quoteForm),
-      headers: { Accept: 'application/json' },
-      mode: 'cors',
-      credentials: 'omit',
-      redirect: 'follow'
-    });
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+        mode: 'cors',
+        credentials: 'omit',
+        redirect: 'follow'
+      });
 
-    if (!response.ok) throw new Error('Submission failed');
+      if (!response.ok) throw new Error('Submission failed');
 
-    quoteForm.reset();
-    formStatus.className = 'form-status form-success';
-    formStatus.textContent = 'Thank you! Your catering request has been sent. We’ll be in touch.';
-  } catch (error) {
-    const phoneLink = document.createElement('a');
-    phoneLink.href = 'tel:+16625165046';
-    phoneLink.textContent = '662-516-5046';
+      form.reset();
+      formStatus.className = 'form-status form-success';
+      formStatus.textContent = form.dataset.success;
+    } catch (error) {
+      const phoneLink = document.createElement('a');
+      phoneLink.href = 'tel:+16625165046';
+      phoneLink.textContent = '662-516-5046';
 
-    formStatus.className = 'form-status form-error';
-    formStatus.append('We could not send your request. Please call or text ', phoneLink, '.');
-  } finally {
-    submitButton.disabled = false;
-    submitButton.textContent = 'Send Quote Request';
-  }
+      formStatus.className = 'form-status form-error';
+      const textLink = document.createElement('a');
+      textLink.href = 'sms:+16625165046';
+      textLink.textContent = 'text us';
+      formStatus.append('We could not send your request. Your details are still here. Please call ', phoneLink, ' or ', textLink, '.');
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = buttonText;
+    }
+  });
 });
