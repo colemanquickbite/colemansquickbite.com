@@ -124,3 +124,8 @@ Copyable customer message:
 > Thank you for choosing Coleman's Quick Bite! Would you share your experience
 > in a Google review? Your feedback helps our small business:
 > https://g.page/r/Cbv4tz_cvOX-EAE/review
+
+## Pan size guide — November 4, 2026
+
+The homepage #pan-sizes section shows banana pudding half pan (50 dollars) and full pan (85 dollars), using the owner's photos in an AI-assisted price graphic. Original photos remain available. Photos are not a scale comparison. The pan diagrams use a uniform scale and dimensions transcribed from the owner's Sams_pans_size reference images: third 12.59 x 6.49 x 2.75 inches; half 12.87 x 10.31 x 2.48 inches; full 20.70 x 12.87 x 3 3/16 inches. Serving counts are not specified. Public graphics are in images/pan-guide. Facebook copies and a ready caption are in the parent workspace's Facebook Pan Guide folder. The renamed half-pan photo replaces banana_pudding2.jpg references, including the restoration archive.
+

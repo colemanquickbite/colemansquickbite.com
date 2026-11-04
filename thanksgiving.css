@@ -197,3 +197,17 @@
 @media (prefers-reduced-motion: reduce) {
   .holiday-ribs, .holiday-side { transform: none; }
 }
+
+/* Pan dimensions and pudding price guide */
+.pan-guide { background: #fff8eb; scroll-margin-top: 100px; }
+.pan-guide h2 { color: #7b241c; font-size: clamp(2rem,4vw,3rem); }
+.pan-guide h3 { color: #7b241c; font-size: 2rem; margin-top: 48px; }
+.pudding-price-graphic, .pan-comparison { display: block; max-width: 780px; margin: 28px auto 16px; }
+.pudding-price-graphic img, .pan-comparison img { display: block; width: 100%; height: auto; border-radius: 16px; }
+.pan-dimension-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; margin: 28px 0; }
+.pan-dimension-grid article { background: white; border-top: 5px solid #d69b2b; border-radius: 12px; padding: 24px; }
+.pan-dimension-grid h4 { color: #7b241c; font-size: 1.4rem; margin: 0 0 12px; }
+.pan-dimension-grid p { margin: 0; }
+.pan-guide-note { color: #62564e; font-size: .95rem; }
+.pan-guide a { color: #7b241c; }
+@media(max-width:620px) { .pan-dimension-grid { grid-template-columns: 1fr; gap: 12px; } }
