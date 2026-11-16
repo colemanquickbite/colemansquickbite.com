@@ -13,7 +13,7 @@ All holiday items, sizes, prices, and dates come from the owner's flyer:
 `flyers/thanksgiving_2026/Colemans_Quick_Bite_Thanksgiving_2026_Final.png`.
 
 - Preorders only.
-- 50% deposit due Thursday, November 19, 2026.
+- 50% deposit due Friday, November 20, 2026.
 - Pickup Wednesday evening, November 25, 2026.
 - Food images: fried turkey, ribs, mac and cheese, baked beans, lasagna, string beans, mixed greens,
   banana pudding, and peach cobbler. Clicking a photo opens the full image.
